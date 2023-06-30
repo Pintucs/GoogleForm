@@ -1,0 +1,24 @@
+.top-page-form {
+    background-color: white;
+    border-radius: 10px;
+    padding: 12px;
+  }
+.form{
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: -15px;
+    margin-top: 20px;
+    margin-left: 18px;
+    margin-right: 18px;
+    padding: 12px;
+
+}
+  
+@media(max-width:800px){
+    .top-page-form {
+      margin-left: 5px;
+      margin-right: 5px;
+      color:red
+    }
+  }
+  
