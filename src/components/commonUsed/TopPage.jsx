@@ -1,15 +1,24 @@
 import React from 'react';
-import "./a.css"
+import "./a.css";
 
-const TopPage = ({ name }) => {
+const TopPage = ({ name, onSwitchUser }) => {
+  const handleSwitchUserClick = () => {
+    // You can implement logic here to switch the user's Gmail account.
+    // For this example, we'll just call the onSwitchUser prop function.
+    onSwitchUser();
+  };
+
   return (
     <>
-    <form className='form'>
-    <h1 className='top-page-form'>Welcome to my site</h1>
+      <form className='form'>
         <p>
           pintucs9695@gmail.com{" "}
           <span>
-            <a href="www.google.com" style={{ textDecoration: "none" }}>
+            <a
+              href="#"
+              style={{ textDecoration: "none" }}
+              onClick={handleSwitchUserClick}
+            >
               switch user
             </a>
           </span>
@@ -19,10 +28,9 @@ const TopPage = ({ name }) => {
           recorded when you upload files and submit this form. Your email is not
           part of your response.
         </p>
-        <span style={{ color: "red" }}>* Indicates required question</span>
-        </form>
+      </form>
     </>
   );
-}
+};
 
 export default TopPage;

@@ -1,12 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import InputBox from "./commonUsed/InputBox";
-import Option from "./commonUsed/OptionInput";
+import OptionTech from "./commonUsed/OptionTechnology";
 import File from "./commonUsed/File";
 import TopPage from "./commonUsed/TopPage";
+import TopColorBlue from "./commonUsed/TopColorBlue";
+import Require from "./commonUsed/Require";
+import Heading from "./commonUsed/Heading"
+import Experience from "./commonUsed/OptionExperience";
+import NoticePeriod from "./commonUsed/OptionNoticePeriod";
+
 const GoogleForm = () => {
+   // State to keep track of the current user's Gmail account
+   const [currentUser, setCurrentUser] = useState('pintucs9695@gmail.com');
+
+   // Function to switch the user's Gmail account
+   const switchUser = () => {
+     // Implement logic to switch the user's Gmail account here
+     // For this example, we'll just update the state with a new email
+     setCurrentUser('example@gmail.com');
+   };
+
+
+
   return (
     <div
-      className="row"
+      className="roww"
       style={{
         display: "flex",
         justifyContent: "center",
@@ -14,15 +32,18 @@ const GoogleForm = () => {
         height: "100vh",
       }}
     >
-      <div className="col-lg-4 col-md-12 p-0" style={{ backgroundColor: "LightGray" }}>
-        <TopPage />
+      <div className="col-lg-12 col-md-12" style={{ backgroundColor: "LightGray" }}>
+        <TopColorBlue />
+        <Heading />
+        <TopPage onSwitchUser={switchUser}/>
+        <Require /> 
         <InputBox name="Full Name *" />
         <InputBox name="Location" />
-        <Option Label="Technology *" />
-        <Option Label="Experience *" />
+        <OptionTech />
+        <Experience />
         <InputBox name="CTC" />
         <InputBox name="ECTC *" />
-        <Option Label="Notice Period *" />
+        <NoticePeriod />
         <File name="Resume *" />
         <InputBox name="Mobile No *" />
         <InputBox name="Email *" />

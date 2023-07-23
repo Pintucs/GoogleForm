@@ -5,7 +5,7 @@ const InputBox = ({name}) => {
 
   return (
     <>
-    <form className="p-3 m-3" style={{backgroundColor:"white",borderRadius:"10px"}}>
+    <form className="p-3 m-3 " style={{backgroundColor:"white",borderRadius:"10px"}}>
       <div className="mb-3">
         <label htmlFor="inputBox" className="form-label">{name}</label>
         <br/>
