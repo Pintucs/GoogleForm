@@ -17,7 +17,7 @@ const GoogleForm = () => {
    const switchUser = () => {
      // Implement logic to switch the user's Gmail account here
      // For this example, we'll just update the state with a new email
-     setCurrentUser('example@gmail.com');
+     setCurrentUser(currentUser);
    };
 
 

@@ -7,8 +7,8 @@ const NoticePeriod = () => {
     <form className="p-3 m-3" style={{backgroundColor:"white",borderRadius:"10px"}}>
       <div className="mb-3">
       <label htmlFor="inputBox" className="form-label">Notice Period *</label>
-      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-        <option selected>Choose</option>
+      <select className="custom-select mr-sm-2" id="inlineFormCustomSelect">
+        <option defaultValue="0">Choose</option>
         <option value="1">Immediately</option>
         <option value="2">15 Days</option>
         <option value="3">1 Month</option>

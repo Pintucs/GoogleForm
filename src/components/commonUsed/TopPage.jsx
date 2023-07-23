@@ -13,15 +13,19 @@ const TopPage = ({ name, onSwitchUser }) => {
       <form className='form'>
         <p>
           pintucs9695@gmail.com{" "}
-          <span>
-            <a
-              href="#"
-              style={{ textDecoration: "none" }}
+            <button
+              style={{
+                textDecoration: "none",
+                background: "none",
+                border: "none",
+                cursor: "pointer",
+                padding: 0,
+                color:"blue"
+              }}
               onClick={handleSwitchUserClick}
             >
               switch user
-            </a>
-          </span>
+            </button>
         </p>
         <p>
           The name and photo associated with your Google account will be

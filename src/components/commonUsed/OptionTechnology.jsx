@@ -7,8 +7,8 @@ const Technology = () => {
     <form className="p-3 m-3" style={{backgroundColor:"white",borderRadius:"10px"}}>
       <div className="mb-3">
       <label htmlFor="inputBox" className="form-label">Technology *</label>
-      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-        <option selected>Choose</option>
+      <select className="custom-select mr-sm-2" id="inlineFormCustomSelect">
+        <option defaultValue="0">Choose</option>
         <option value="1">Artificial Intelligence & Machine Learning</option>
         <option value="2">Angular Programming</option>
         <option value="3">Cloud Computing & Edge Computing</option>
